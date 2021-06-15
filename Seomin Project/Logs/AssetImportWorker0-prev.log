@@ -1,0 +1,128 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'ko' Physical Memory: 16303 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/USER/Documents/Seomin Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+10523
+Successfully changed project path to: C:/Users/USER/Documents/Seomin Project
+C:/Users/USER/Documents/Seomin Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/Documents/Seomin Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f51)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   26.21.14.3162
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002568 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 30.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.609 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001058 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 32.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.841 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1810 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.9 MB.
+System memory in use after: 98.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2275.
+Total: 2.008100 ms (FindLiveObjects: 0.191300 ms CreateObjectMapping: 0.134400 ms MarkObjects: 1.663000 ms  DeleteObjects: 0.018200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Emages/Enemy/unnamed.spriteatlas
+  artifactKey: Guid(eb75ae011dd35fa479332f2d054d4191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Emages/Enemy/unnamed.spriteatlas using Guid(eb75ae011dd35fa479332f2d054d4191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add2bf1c46ddc59c2f8479c3506f22d2') in 0.042363 seconds
+  Import took 0.045122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.604036 seconds.
+  path: Assets/Emages/Enemy/unnamed.spriteatlas
+  artifactKey: Guid(eb75ae011dd35fa479332f2d054d4191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Emages/Enemy/unnamed.spriteatlas using Guid(eb75ae011dd35fa479332f2d054d4191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e97c63bdb2860d907bef33ba75aae3e') in 0.004033 seconds
+  Import took 0.006955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017098 seconds.
+  path: Assets/Emages/Enemy/unnamed.spriteatlas
+  artifactKey: Guid(eb75ae011dd35fa479332f2d054d4191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Emages/Enemy/unnamed.spriteatlas using Guid(eb75ae011dd35fa479332f2d054d4191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e97c63bdb2860d907bef33ba75aae3e') in 0.003844 seconds
+  Import took 0.006488 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000886 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.810 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1803 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2278.
+Total: 4.105100 ms (FindLiveObjects: 0.257900 ms CreateObjectMapping: 0.078300 ms MarkObjects: 3.735300 ms  DeleteObjects: 0.032000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 59.663293 seconds.
+  path: Assets/Emages/Enemy/unnamed.spriteatlas
+  artifactKey: Guid(eb75ae011dd35fa479332f2d054d4191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Emages/Enemy/unnamed.spriteatlas using Guid(eb75ae011dd35fa479332f2d054d4191) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Invalid sprite atlas asset encountered when matching atlas for sprite unnamed1. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite unnamed2. Please repack all your sprite atlases.
+
+ -> (artifact id: '77b55f307520fd99818582fe78c7cbe3') in 0.042119 seconds
+  Import took 0.047635 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
