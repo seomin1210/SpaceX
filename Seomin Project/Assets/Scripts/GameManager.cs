@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     private Text lifeText = null;
     [SerializeField]
     private GameObject meteor;
+
+    private float healingChance = 0;
     public Vector2 minPosition { get; private set; }
     public Vector2 maxPosition { get; private set; }
     private int score = 0;
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
         minPosition = new Vector2(-2.4f, -5.5f);
         maxPosition = new Vector2(2.4f, 5f);
         StartCoroutine(SpawnMeteor());
+        highScore = PlayerPrefs.GetInt("HIGHSCORE", 0);
     }
     public void AddScore(int addScore)
     {
@@ -40,6 +43,10 @@ public class GameManager : MonoBehaviour
     public void Dead()
     {
         life--;
+        if(life <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
         UpdateUI();
     }
     public void UpdateUI()
@@ -72,6 +79,15 @@ public class GameManager : MonoBehaviour
                 phase++;
             }
             yield return new WaitForSeconds(randomDelay);
+        }
+    }
+    public void Heal()
+    {
+        healingChance = Random.Range(0f, 10f);
+        if(healingChance < 1f)
+        {
+            life++;
+            UpdateUI();
         }
     }
 }

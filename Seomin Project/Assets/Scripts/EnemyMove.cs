@@ -40,6 +40,7 @@ public class EnemyMove : MonoBehaviour
             col.enabled = false;
             Destroy(gameObject);
             gameManager.AddScore(score*5);
+            gameManager.Heal();
         }
     }
 }
