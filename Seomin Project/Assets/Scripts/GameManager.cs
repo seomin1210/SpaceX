@@ -25,10 +25,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        //PlayerPrefs.DeleteKey("HIGHSCORE");
         minPosition = new Vector2(-2.4f, -5.5f);
         maxPosition = new Vector2(2.4f, 5f);
         StartCoroutine(SpawnMeteor());
         highScore = PlayerPrefs.GetInt("HIGHSCORE", 0);
+        UpdateUI();
     }
     public void AddScore(int addScore)
     {
@@ -63,21 +65,21 @@ public class GameManager : MonoBehaviour
         while (true)
         {
             if(phase < 10)
-                randomDelay = Random.Range(2f, 3f);
+                randomDelay = Random.Range(2f, 2.5f);
             else if (phase < 25)
                 randomDelay = Random.Range(1.5f, 2f);
             else if (phase < 50)
-                randomDelay = Random.Range(1f, 2f);
-            else if (phase < 100)
                 randomDelay = Random.Range(1f, 1.5f);
+            else if (phase < 100)
+                randomDelay = Random.Range(0.5f, 1.5f);
             else
                 randomDelay = Random.Range(0.5f, 1f);
             for (int j = 0; j < 4; j++)
             {
                 randomX = Random.Range(-2, 3);
                 Instantiate(meteor, new Vector2(randomX, 5f), Quaternion.identity);
-                phase++;
             }
+            phase++;
             yield return new WaitForSeconds(randomDelay);
         }
     }

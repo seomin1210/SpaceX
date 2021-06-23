@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 28227558}
   - component: {fileID: 28227557}
   m_Layer: 5
-  m_Name: Restart Button
+  m_Name: ReStart Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 429800470}
   - component: {fileID: 429800469}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ReStrat Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,18 +359,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 1
+    m_MaxSize: 150
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\uC7AC\uC2DC\uC791"
 --- !u!222 &429800470
 CanvasRenderer:
   m_ObjectHideFlags: 0
