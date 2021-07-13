@@ -9,14 +9,12 @@ public class EnemyMove : MonoBehaviour
     [SerializeField]
     private int score = 10;
 
-    private GameManager gameManager = null;
     private Collider2D col = null;
     private bool isDead = false;
 
 
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
         col = GetComponent<Collider2D>();
     }
 
@@ -24,10 +22,10 @@ public class EnemyMove : MonoBehaviour
     {
         if (isDead) return;
         transform.Translate(Vector2.down * speed * Time.deltaTime);
-        if(transform.position.y < gameManager.minPosition.y)
+        if(transform.position.y < GameManager.Instance.minPosition.y)
         {
             Destroy(gameObject);
-            gameManager.AddScore(score);
+            GameManager.Instance.AddScore(score);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,8 +37,8 @@ public class EnemyMove : MonoBehaviour
             isDead = true;
             col.enabled = false;
             Destroy(gameObject);
-            gameManager.AddScore(score*5);
-            gameManager.Heal();
+            GameManager.Instance.AddScore(score*5);
+            GameManager.Instance.Heal();
         }
     }
 }

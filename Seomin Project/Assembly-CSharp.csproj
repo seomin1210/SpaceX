@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\BackGroundMove.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\MonoSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

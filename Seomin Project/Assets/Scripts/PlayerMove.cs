@@ -12,14 +12,12 @@ public class PlayerMove : MonoBehaviour
     private GameObject bulletPrefab = null;
 
     private Vector2 targetPosition = Vector2.zero;
-    private GameManager gameManager = null;
     private bool isDamaged = false;
     private SpriteRenderer spriteRenderer = null;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        gameManager = FindObjectOfType<GameManager>();
         StartCoroutine(Fire());
     }
 
@@ -57,7 +55,7 @@ public class PlayerMove : MonoBehaviour
         if (!isDamaged)
         {
             isDamaged = true;
-            gameManager.Dead();
+            GameManager.Instance.Dead();
             for (int i = 0; i < 3; i++)
             {
                 spriteRenderer.enabled = false;

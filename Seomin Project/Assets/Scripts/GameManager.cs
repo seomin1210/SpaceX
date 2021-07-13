@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoSingleton<GameManager>
 {
-    [SerializeField]
-    private int life = 3;
+
+    public int life { get; private set; } = 3;
     [SerializeField]
     private Text scoreText = null;
     [SerializeField]
@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public Vector2 maxPosition { get; private set; }
     private int score = 0;
     private int highScore = 0;
+
 
     void Start()
     {
